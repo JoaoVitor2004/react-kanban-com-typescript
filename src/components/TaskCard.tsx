@@ -68,6 +68,29 @@ export const TaskCard: React.FC<TasksProps> = ({ task }) => {
         }
     }
 
+    const handleUpdatePriority = () => {
+
+        const selectPriority = prompt("Digite qual a prioridade: \n baixa \n media \n alta")
+
+        if (selectPriority) {
+
+            switch (selectPriority) {
+                case "baixa":
+                    updateTasks(task.id, { priority: "low" })
+                    break
+                case "media":
+                    updateTasks(task.id, { priority: "medium" })
+                    break
+                case "alta":
+                    updateTasks(task.id, { priority: "high" })
+                    break
+            }
+
+        }
+
+
+    }
+
     const handleDeleteTask = () => {
         const confirmation = confirm("Deseja excluir a tarefa?")
         confirmation ? deleteTasks(task.id) : alert("Ok")
@@ -77,7 +100,7 @@ export const TaskCard: React.FC<TasksProps> = ({ task }) => {
         <Card>
             <Flex align={"center"} gap={"4"}>
                 <Heading as="h3" size={"3"}>{task.title}</Heading>
-                <Badge color={getPriorityColor(task.priority)}> { getActionTextPriority(task.priority) } </Badge>
+                <Badge color={getPriorityColor(task.priority)}> {getActionTextPriority(task.priority)} </Badge>
             </Flex>
             <Text as="p" my={"4"}>{task.description}</Text>
             <Flex gap={"4"}>
@@ -88,6 +111,7 @@ export const TaskCard: React.FC<TasksProps> = ({ task }) => {
                         </Button>
                     )
                 }
+                <Button onClick={handleUpdatePriority}>Trocar prioridade</Button>
                 <Button onClick={handleDeleteTask} color="red">Excluir</Button>
             </Flex>
         </Card>
