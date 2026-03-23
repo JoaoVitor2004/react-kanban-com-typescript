@@ -1,6 +1,6 @@
 <img src="./src/assets/capa-2.png" alt="capa do projeto">
 
-## App pesquisa de filme
+## App React Kanban
 
 Projeto lista de tarefas onde podemos adicionar tarefas por um formulario atualizar e remover, estando totalmente responsivo
 
