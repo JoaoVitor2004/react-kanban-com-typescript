@@ -1,18 +1,3 @@
 {
-  "tasks": [
-    {
-      "id": "0869",
-      "title": "Ir ao mercado",
-      "description": "Fazer uma lista de compras antes de ir",
-      "status": "done",
-      "priority": "low"
-    },
-    {
-      "id": "6a46",
-      "title": "Correr uma maratona",
-      "description": "teste",
-      "status": "doing",
-      "priority": "medium"
-    }
-  ]
+  "tasks": []
 }

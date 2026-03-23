@@ -57,7 +57,7 @@ export const TaskCard: React.FC<TasksProps> = ({ task }) => {
         return priorityColor[priority]
     }
 
-    const handleUpdateTask = async () => {
+    const handleUpdateTask = () => {
 
         if (task.status === "todo") {
             updateTasks(task.id, { status: "doing" })
