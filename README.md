@@ -6,7 +6,7 @@ Projeto lista de tarefas onde podemos adicionar tarefas por um formulario atuali
 
 ### ⚙️ Acesar o projeto
 
-[Endereço](app-pesquisa-de-filmes.vercel.app)
+[Endereço](https://react-kanban-com-typescript.vercel.app/)
 
 ### 🛠️ Tecnologias utilizadas
 
