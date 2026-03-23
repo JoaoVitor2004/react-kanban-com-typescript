@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "vite",
     "json-server": "json-server --watch ./db.json --port 3000",
-    "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
